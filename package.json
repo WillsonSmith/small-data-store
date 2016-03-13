@@ -1,14 +1,14 @@
 {
-  "name": "es6-event-emitter",
+  "name": "small-data-store",
   "version": "1.0.0",
-  "description": "A basic JavaScript event emitter written in es6",
+  "description": "A basic JavaScript flux-y store written in ES6",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/WillsonSmith/es6-event-emitter"
   },
   "scripts": {
-    "babel": "babel ./basicStore.js --source-maps --watch --out-file ./build/basicStore.js",
+    "babel": "babel ./smallDataStore.js --source-maps --watch --out-file ./build/smallDataStore.js",
     "cleanup": "screen -X -S postcss quit"
   },
   "author": "= <=> (https://willsonsmith.com)",

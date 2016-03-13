@@ -13,7 +13,18 @@
   <p>My view has been loaded</p>
   </div>
 
-  <script type="text/javascript" src="build/basicStore.js"></script>
-
+  <script type="text/javascript" src="build/smallDataStore.js"></script>
+  <script type="text/javascript">
+  let storeFactory = smallDataStore();
+  let carStore = storeFactory.new({
+    'inventory': 100,
+    'colors': ['red', 'yellow', 'blue']
+  });
+  let fruitStore = storeFactory.new();
+    fruitStore.set('fruits', ['banana', 'apple']);
+    carStore.set('beep', true);
+    console.log(carStore.get('inventory'));
+    console.log(carStore.get('colors'));
+  </script>
   </body>
 </html>

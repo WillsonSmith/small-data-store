@@ -5,7 +5,7 @@ or es2015 - whatever you want to call it
 
 Sample code
 ```
-let storeFactory = basicStore();
+let storeFactory = smallDataStore();
 let carStore = storeFactory.new({
   'inventory': 100,
   'colors': ['red', 'yellow', 'blue']
