@@ -50,6 +50,7 @@ console.log(meatGroceryStore.get('purchased')); // true
 console.log(fruitGroceryStore.get('purchased')); // true
 ```
 You can also call `smallDataStore()` directly. Unlike using `.new()`, you _must_ pass an object, otherwise it will expect you to call `.new()`
+```
 let carStore = smallDataStore({
   'ford': 15,
   'honda': 12,
