@@ -9,6 +9,7 @@
   },
   "scripts": {
     "babel": "babel ./smallDataStore.js --source-maps --watch --out-file ./build/smallDataStore.js",
+    "build-sample": "babel ./sample/sample.js --source-maps --watch --out-file ./build/sample/sample.js",
     "cleanup": "screen -X -S postcss quit"
   },
   "author": "= <=> (https://willsonsmith.com)",
