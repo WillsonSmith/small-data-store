@@ -20,15 +20,15 @@ function smallDataStore(instantInitiator) {
       }
     }
   }
-  let newStore = function newStore(initial) {
-      let store = initial || {};
+  let newStore = function newStore(initial = {}) {
+      let store = initial;
       let actions = storeActions(store);
       groupedStores.push(actions);
       return actions;
   }
 
   if (instantInitiator) {
-    return newStore(instantInitiator)
+    return newStore(instantInitiator);
   }
 
   return {

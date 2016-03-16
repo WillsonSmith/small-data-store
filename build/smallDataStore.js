@@ -22,8 +22,10 @@ function smallDataStore(instantInitiator) {
       }
     };
   };
-  var newStore = function newStore(initial) {
-    var store = initial || {};
+  var newStore = function newStore() {
+    var initial = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+
+    var store = initial;
     var actions = storeActions(store);
     groupedStores.push(actions);
     return actions;
