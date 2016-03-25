@@ -60,3 +60,6 @@ let carStore = smallDataStore({
 console.log(carStore.keys()); // ['ford', 'honda', 'toyota'];
 console.log(carStore.get('ford')); // 15
 ```
+
+### Running tests
+`npm test` will build and run the tests. You will need to have already built `smallDataStore.js` with `npm run babel`.
