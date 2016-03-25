@@ -6,7 +6,6 @@ var _smallDataStore2 = _interopRequireDefault(_smallDataStore);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log(_smallDataStore2.default);
 var assert = require('assert');
 
 var dataStore = (0, _smallDataStore2.default)();

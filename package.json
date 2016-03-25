@@ -8,10 +8,9 @@
     "url": "https://github.com/WillsonSmith/es6-event-emitter"
   },
   "scripts": {
+    "test": "babel ./smallDataStoreTest.js --source-maps --out-file ./test/smallDataStoreTest.js && mocha",
     "babel": "babel ./smallDataStore.js --source-maps --watch --out-file ./build/smallDataStore.js",
-    "build-sample": "babel ./sample/sample.js --source-maps --watch --out-file ./build/sample/sample.js",
-    "cleanup": "screen -X -S postcss quit",
-    "babel-test": "babel ./smallDataStoreTest.js --source-maps --out-file ./test/smallDataStoreTest.js"
+    "build-sample": "babel ./sample/sample.js --source-maps --watch --out-file ./build/sample/sample.js"
   },
   "author": "= <=> (https://willsonsmith.com)",
   "license": "MIT",
