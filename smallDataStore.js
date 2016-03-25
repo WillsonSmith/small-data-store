@@ -10,6 +10,7 @@ function smallDataStore(instantInitiator) {
       },
       set(key, value) {
         store[key] = value;
+        return store[key];
       },
       keys() {
         return Object.keys(store);
@@ -38,3 +39,5 @@ function smallDataStore(instantInitiator) {
     new: newStore
   }
 }
+
+export default smallDataStore

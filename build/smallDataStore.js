@@ -1,5 +1,8 @@
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 function smallDataStore(instantInitiator) {
 
   var groupedStores = [];
@@ -12,6 +15,7 @@ function smallDataStore(instantInitiator) {
       },
       set: function set(key, value) {
         store[key] = value;
+        return store[key];
       },
       keys: function keys() {
         return Object.keys(store);
@@ -43,5 +47,7 @@ function smallDataStore(instantInitiator) {
     new: newStore
   };
 }
+
+exports.default = smallDataStore;
 
 //# sourceMappingURL=smallDataStore.js.map

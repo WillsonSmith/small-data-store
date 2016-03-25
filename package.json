@@ -10,12 +10,14 @@
   "scripts": {
     "babel": "babel ./smallDataStore.js --source-maps --watch --out-file ./build/smallDataStore.js",
     "build-sample": "babel ./sample/sample.js --source-maps --watch --out-file ./build/sample/sample.js",
-    "cleanup": "screen -X -S postcss quit"
+    "cleanup": "screen -X -S postcss quit",
+    "babel-test": "babel ./smallDataStoreTest.js --source-maps --out-file ./test/smallDataStoreTest.js"
   },
   "author": "= <=> (https://willsonsmith.com)",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.5.1",
-    "babel-preset-es2015": "^6.5.0"
+    "babel-preset-es2015": "^6.5.0",
+    "mocha": "^2.4.5"
   }
 }
